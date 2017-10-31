@@ -1,0 +1,16 @@
+Version of workspace file format:
+               4
+Time of storage:
+               "Tue Oct 31 16:34:40 CET 2017"
+Name of the workspace:
+               "words"
+File paths of contained projects:
+               ["stack.yaml"]
+Maybe file path of an active project:
+               Just "stack.yaml"
+Maybe file path of an active package:
+               Just "words.cabal"
+Maybe name of an active component:
+               Nothing
+Version Control System configurations for packages:
+               fromList []

@@ -1,0 +1,47 @@
+name:                words
+version:             0.1.0.0
+github:              nielsen192/words
+license:             BSD3
+author:              Thomas V. Nielsen
+maintainer:          nielsen192@gmail.com
+copyright:           BSD
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:
+# description:
+# category:            Example
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  words-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -dynamic
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - words
+
+tests:
+  words-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -dynamic
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - words
+    - hspec
